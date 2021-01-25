@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace PryAnezNatalia.Models
+﻿namespace PryAnezNatalia.Models
 {
+    using System.ComponentModel.DataAnnotations;
     public class Company
-    {
-        public string name { get; set; }
-        public string catchPhrase { get; set; }
-        public string bs { get; set; }
+{
     
-    }
+        [Key]
+        [Required]
+        public string name { get; set; }        
+        public string catchPhrase { get; set; }    
+}
 }
